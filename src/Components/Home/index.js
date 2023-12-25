@@ -1,10 +1,15 @@
-import { Component } from "react";
+import React, { Component } from "react";
+import Header from "../Header";
 
-class Home extends Component{
-    render(){
-        return(
-            <h1> Home Page</h1>
-        )
+class Home extends Component {
+    render() {
+        return (
+            <div>
+                <Header />
+                <h1>Home Page</h1>
+            </div>
+        );
     }
 }
-export default Home
+
+export default Home;

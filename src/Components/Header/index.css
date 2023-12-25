@@ -1,0 +1,15 @@
+
+.left {
+    margin-left: 20px; 
+  }
+  
+.Header-logo{
+    width:145px;
+}
+
+  @media (min-width: 992px) {
+    .left {
+      margin-left: 1100px; 
+    }
+  }
+  
