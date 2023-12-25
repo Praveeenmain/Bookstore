@@ -4,25 +4,21 @@ import Books from "./Components/Books";
 import BookDetails from "./Components/BookDetails";
 import Cart from "./Components/Cart";
 import Checkout from "./Components/Checkout";
+import NotFound from './Components/NotFound';
 
-const App=()=>{
-   return(
-    <Router>
-         
-            <Routes>
-                   <Route path="/" element={<Home />}/>
-                   <Route path="/Books" element={<Books />}/>
-                   <Route path="/bookdetails" element={<BookDetails />}/>
-                   <Route path="/cart" element={<Cart />}/>
-                   <Route path="/checkout" element={<Checkout/>}/>
+const App = () => {
+   return (
+      <Router>
+         <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/books" element={<Books />} />
+            <Route path="/bookdetails" element={<BookDetails />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path="*" element={<NotFound />} />
+         </Routes>
+      </Router>
+   );
+};
 
-            </Routes>
-
-
-
-
-
-    </Router>
-   )
-}
-export default App
+export default App;

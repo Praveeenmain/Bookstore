@@ -1,0 +1,153 @@
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .progress-bar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #0284C7;
+    border-top: 3px solid transparent;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+.new-books-container{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 45px;
+}
+.Welcome-heading {
+    font-size: 36px;
+    color: blueviolet;
+  }
+
+  
+  .Home-paragraph {
+    font-size: 16px;
+    color: #0f4934;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .Welcome-heading {
+      font-size: 28px;
+    }
+  
+    .Home-paragraph {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Welcome-heading {
+      font-size: 24px;
+    }
+  
+    .Home-paragraph {
+      font-size: 12px;
+    }
+  }
+  
+  .Welcome-heading, .Home-paragraph {
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  .Carousel {
+    box-shadow: 0px 0px 10px rgba(0.1, 0.1, 0.1, 0.1);
+    padding: 40px;
+    margin: auto;
+    max-width: 100%;
+    margin-left: 35px; 
+    margin-right: 35px; 
+    margin-bottom: 35px;
+    border-radius: 15px;
+  }
+  .car-heading{
+    font-size:28px;
+    color:green;
+  }
+  
+  .Failure-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust if necessary */
+  }
+  
+  .failure-image {
+    width: 347px;
+    height: 170.002px;
+    flex-shrink: 0;
+  }
+  
+  .retry-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #0284C7;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+  .retry-button:hover {
+    background-color: #025e88;
+    transform: scale(1.1);
+  }
+  
+  /* Media queries for responsiveness */
+  @media only screen and (max-width: 480px) {
+    /* Small screens */
+    .failure-image {
+      width: 100%;
+      height: auto;
+    }
+  
+    .retry-button {
+      margin-top: 15px;
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+  
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Medium screens */
+    .failure-image {
+      width: 80%;
+      height: auto;
+    }
+  
+    .retry-button {
+      margin-top: 18px;
+      padding: 9px 18px;
+      font-size: 15px;
+    }
+  }
+  
+  /* Add more media queries for larger screens if needed */
+  
