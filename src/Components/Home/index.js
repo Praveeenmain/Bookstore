@@ -62,19 +62,34 @@ class Home extends Component {
    
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1024, // Large screens
           settings: {
             slidesToShow: 3,
             slidesToScroll: 1,
           },
         },
         {
-          breakpoint: 786,
+          breakpoint: 768, // Medium screens
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
           },
         },
+        {
+          breakpoint: 480, // Small screens
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 1200, // Extra-large screens
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          },
+        },
+        // Add more breakpoints and settings as needed
       ],
     };
     const { newBooks } = this.state;

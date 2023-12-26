@@ -6,6 +6,7 @@ const BookCard = (props) => {
     const { image, price, title, id } = bookdetails;
     let numberOnly = price.substring(1); 
     const rupees = Math.round(parseInt(numberOnly)); 
+
     return (
         <Link to={`/bookdetails/${id}`} className="Link">
             <li className='New-Book-Card'>

@@ -24,14 +24,13 @@
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
-  
     line-height: 32px;
     text-decoration: none;
 }
 
 /* Price styles */
 .newBookPrice {
-    color: var(--light-blue-gray-600, #475569);
+    color: var(--light-blue-gray-600, red);
     text-align: center;
     font-family: Inter;
     font-size: 14px;
@@ -51,22 +50,25 @@
     .New-Book-Card {
         margin-right: 10px;
         margin-left: 10px;
+        height: 230px;
+        width: 230px;
+        
     }
     
     .newbookimage {
         width: 100%;
-        height: auto;
+        height: 145px;
         border-radius: 8px;
     }
     
     .newBookTitle {
-        font-size: 18px;
-        line-height: 28px;
+        font-size: 15px;
+        line-height: 10px;
     }
     
     .newBookPrice {
-        font-size: 10px;
-        line-height: 14px;
+        font-size: 7px;
+        line-height: 7px;
     }
 }
 
@@ -75,22 +77,24 @@
     .New-Book-Card {
         margin-right: 20px;
         margin-left: 20px;
+        height: 250px;
+        width: 250px;
     }
     
     .newbookimage {
         width: 80%;
-        height: auto;
+        height: 155px;
         border-radius: 6px;
     }
     
     .newBookTitle {
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 18px;
+        line-height: 10px;
     }
     
     .newBookPrice {
-        font-size: 12px;
-        line-height: 15px;
+        font-size: 8px;
+        line-height: 9px;
     }
 }
 
@@ -99,6 +103,8 @@
     .New-Book-Card {
         margin-right: 30px;
         margin-left: 30px;
+        height: 300px;
+        width: 300px;
     }
     
     .newbookimage {
@@ -108,13 +114,13 @@
     }
     
     .newBookTitle {
-        font-size: 26px;
-        line-height: 34px;
+        font-size: 23px;
+        line-height: 14px;
     }
     
     .newBookPrice {
-        font-size: 14px;
-        line-height: 16px;
+        font-size: 10px;
+        line-height: 13px;
     }
 }
 
@@ -123,21 +129,23 @@
     .New-Book-Card {
         margin-right: 40px;
         margin-left: 40px;
+        height:350px;
+        width:350px;
     }
     
     .newbookimage {
         width: 60%;
-        height: auto;
+        height: 190px;
         border-radius: 6px;
     }
     
     .newBookTitle {
-        font-size: 28px;
-        line-height: 36px;
+        font-size: 23px;
+        line-height: 32px;
     }
     
     .newBookPrice {
         font-size: 15px;
-        line-height: 18px;
+        line-height: 30px;
     }
 }

@@ -5,7 +5,7 @@ import Header from '../Header'
          
         return(
             <div>
-                 <Header/>
+            <Header/>
             <h1> Book Details Page</h1>
             </div>
         )
