@@ -45,7 +45,7 @@ class Books extends Component{
         const response=await fetch(apiUrl)
         if (response.ok){
             const fetchedData=await response.json()
-            console.log(fetchedData)
+           
             const updatedfetchedData=fetchedData.books.map(eachbook=>({
                 image:eachbook.image,
                 price:eachbook.price,
@@ -53,11 +53,11 @@ class Books extends Component{
                 title:eachbook.title
             }))
             this.setState({
-                books:updatedfetchedData                  ,
+                books:updatedfetchedData,            
                 apiStatus:apiStatusConstants.success
             })
         }else{
-            console.log("error")
+          
             this.setState({
                 apiStatus:apiStatusConstants.failure
             })
@@ -68,10 +68,7 @@ class Books extends Component{
         const { books } = this.state;
         return (
             <div>
-                <div className="search-input-container">
-            <input className="search-input" type="search" onKeyDown={this.onKey} onChange={this.onChangeSearch} placeholder="search Books"/>
-            <button className="search-button"  onClick={this.onSearchBooks}> <BiSearch/> </button>
-            </div>
+            
           <ul className="Books-container">
             {books.map((eachbook) => (
               <BookCard bookdetails={eachbook} key={eachbook.id} />
@@ -115,7 +112,10 @@ class Books extends Component{
         return(
             <div>
              <Header/>
-
+             <div className="search-input-container">
+            <input className="search-input" type="search" onKeyDown={this.onKey} onChange={this.onChangeSearch} placeholder="search Books"/>
+            <button className="search-button"  onClick={this.onSearchBooks}> <BiSearch/> </button>
+            </div>
              {this.renderViews()}
               
             </div>

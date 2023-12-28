@@ -1,0 +1,309 @@
+.book-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.book-image {
+
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    transform-origin: center;
+    animation: rotateImage 6s linear infinite;
+}
+
+@keyframes rotateImage {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+.book-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.book-authors {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.book-description {
+    margin-bottom: 15px;
+}
+
+.book-price {
+    font-weight: bold;
+    color: red;
+}
+
+.book-rating {
+    font-style: italic;
+    color: blue; 
+}
+
+.book-publisher {
+    font-style: italic;
+    color: #008000;
+}
+
+/* CSS for Add to Cart button animation */
+.add-to-cart-btn {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Animation */
+  @keyframes scale {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .add-to-cart-btn.animate {
+    animation: scale 0.5s ease;
+  }
+  
+
+@media only screen and (max-width: 600px) {
+    .book-details {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .book-image {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        transform-origin: center;
+        animation: rotateImage 6s linear infinite;
+    }
+
+    @keyframes rotateImage {
+        from {
+            transform: rotateY(0deg);
+        }
+        to {
+            transform: rotateY(360deg);
+        }
+    }
+
+    .book-title {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .book-authors {
+        font-style: italic;
+        margin-bottom: 5px;
+    }
+
+    .book-description {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .book-price {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .book-rating {
+        font-style: italic;
+        font-size: 14px;
+    }
+
+    .book-publisher {
+        font-style: italic;
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .book-details {
+        padding: 15px;
+    }
+
+    .book-image {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+        transform-origin: center;
+        animation: rotateImage 6s linear infinite;
+    }
+
+    @keyframes rotateImage {
+        from {
+            transform: rotateY(0deg);
+        }
+        to {
+            transform: rotateY(360deg);
+        }
+    }
+
+    .book-title {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .book-authors {
+        font-style: italic;
+        margin-bottom: 8px;
+    }
+
+    .book-description {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .book-price {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .book-rating {
+        font-style: italic;
+        font-size: 16px;
+    }
+
+    .book-publisher {
+        font-style: italic;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+    .book-details {
+        padding: 20px;
+    }
+
+    .book-image {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        transform-origin: center;
+        animation: rotateImage 6s linear infinite;
+    }
+
+    @keyframes rotateImage {
+        from {
+            transform: rotateY(0deg);
+        }
+        to {
+            transform: rotateY(360deg);
+        }
+    }
+
+    .book-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .book-authors {
+        font-style: italic;
+        margin-bottom: 10px;
+    }
+
+    .book-description {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .book-price {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .book-rating {
+        font-style: italic;
+        font-size: 18px;
+    }
+
+    .book-publisher {
+        font-style: italic;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 1201px) {
+    .book-details {
+        padding: 25px;
+    }
+
+    .book-image {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 25px;
+        transform-origin: center;
+        animation: rotateImage 6s linear infinite;
+    }
+
+    @keyframes rotateImage {
+        from {
+            transform: rotateY(0deg);
+        }
+        to {
+            transform: rotateY(360deg);
+        }
+    }
+
+    .book-title {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+
+    .book-authors {
+        font-style: italic;
+        margin-bottom: 12px;
+    }
+
+    .book-description {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .book-price {
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    .book-rating {
+        font-style: italic;
+        font-size: 20px;
+    }
+
+    .book-publisher {
+        font-style: italic;
+        font-size: 20px;
+    }
+}
+
