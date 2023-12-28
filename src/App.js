@@ -8,6 +8,8 @@ import Checkout from './Components/Checkout';
 import NotFound from './Components/NotFound';
 import { CartProvider } from './Context/cartcontext';
 
+import 'react-toastify/dist/ReactToastify.css';
+
 const App = () => {
   return (
     <Router>
@@ -18,6 +20,7 @@ const App = () => {
           <Route path="/books/:id" element={<BookDetails />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
+       
           <Route path="*" element={<NotFound />} />
         </Routes>
       </CartProvider>
