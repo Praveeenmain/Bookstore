@@ -39,9 +39,7 @@
 
 ## Resources
 
-### Design files
 
-    List the references of design files required for the Assignment
 
 ### APIs
    search All Books :https://api.itbook.store/1.0/search/mongodb
@@ -49,6 +47,8 @@
    New Books:https://api.itbook.store/1.0/new
 
    Book Details: https://api.itbook.store/1.0/books/9781617294136
+
+   used email.js for orderdetails to Retailer
     
 
 ### Third-party packages
