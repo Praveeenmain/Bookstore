@@ -1,0 +1,32 @@
+
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.not-found-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+
+.back-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #007bff; /* Your desired button background color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: #0056b3; /* Adjusted color on hover */
+}
